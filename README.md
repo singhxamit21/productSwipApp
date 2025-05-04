@@ -1,12 +1,69 @@
-# React + Vite
+# ProductSwipApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile app built using **React**, **Vite**, and **Capacitor**. This app allows users to swipe through products, showcasing a simple and interactive user experience.
 
-Currently, two official plugins are available:
+## Features
+- Swipe through products like a carousel.
+- Built with React for efficient and interactive UI.
+- Vite used for fast development and build process.
+- Capacitor for creating native mobile apps for iOS and Android.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React, Vite
+- **Mobile Platform**: Capacitor
+- **State Management**: (e.g., Redux, Context API) *(if applicable)*
+- **Styling**: CSS/SCSS (or styled-components) *(if applicable)*
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To get started with the project, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/singhxamit21/productSwipApp.git
+   cd productSwipApp
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+
+3. **Run the app in development mode**:
+
+   ```bash
+   npm run dev
+    # or
+    yarn dev
+  This will start the app on http://localhost:3000 (by default).
+
+  ## Build for Mobile
+
+1. **Install Capacitor**:
+
+   ```bash
+   npm install @capacitor/core @capacitor/cli
+    npx cap init
+
+2. **Add platform (Android/iOS)**:
+
+   ```bash
+    npx cap add android
+    # or
+    npx cap add ios
+   
+3. **Build and sync**:
+
+   ```bash
+   npm run build
+    npx cap sync
+
+3. **Open project in Android Studio**:
+
+   ```bash
+   npx cap open android
+    # or
+    npx cap open ios
+
